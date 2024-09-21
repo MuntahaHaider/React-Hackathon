@@ -1,0 +1,48 @@
+.backgrounddiv {
+    position:static;
+    /* background-image: url('../../assets//images//HeroBackground.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1; 
+    
+}
+.backgrounddiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0.8, 0.6);
+    z-index: -5; 
+    background-color: transparent !important;
+    background-image: linear-gradient(#4f4f4f, #272c41);
+    opacity: .8;
+}
+
+
+
+
+
+.backgroundText{
+    width: 500px;
+   color:#D8DADC;
+    padding:50px;
+   margin-left: 200px !important;
+    font-style: oblique;
+}
+
+
+@media (max-width: 400px) {
+    
+  
+    .backgroundText{
+        width: 400px;
+        margin: 10px !important;
+    }
+
+    
+}
